@@ -1,6 +1,7 @@
+"use client";
+
 import { useState } from "react";
 import { Content, OpenerButton } from ".";
-
 
 export function BurgerMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

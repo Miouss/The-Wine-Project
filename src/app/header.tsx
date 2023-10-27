@@ -1,7 +1,5 @@
-"use client";
-
 import { CiImageOn } from "react-icons/ci";
-import { BurgerMenu } from "./_components/burger-menu";
+import { BurgerMenu } from "./_components";
 
 export function Header() {
   return (

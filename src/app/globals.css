@@ -24,8 +24,6 @@ body {
 
   background: wheat;
   color: black;
-
-  gap: 2rem;
 }
 
 body > * {
