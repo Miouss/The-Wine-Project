@@ -36,29 +36,59 @@ export function WinePrez() {
           </p>
         </div>
       </div>
-      <WineCard />
-      <WineCard />
-      <WineCard />
+      <WineCard>
+        <WineDescription>
+          <WineImage />
+          <WineDetails />
+        </WineDescription>
+      </WineCard>
+
+      <WineCard>
+        <WineDescription>
+          <WineImage />
+          <WineDetails />
+        </WineDescription>
+      </WineCard>
+
+      <WineCard>
+        <WineDescription>
+          <WineImage />
+          <WineDetails />
+        </WineDescription>
+      </WineCard>
     </section>
   );
 }
 
-function WineCard() {
+export function WineCard({ children }: React.PropsWithChildren) {
+  return <div className="flex flex-col">{children}</div>;
+}
+
+export function WineHeader() {
+  return <h4 className="text-xl pl-16">Grand Vin 2020</h4>;
+}
+
+export function WineDescription({ children }: React.PropsWithChildren) {
+  return <figure className="flex flex-col gap-4 m-12 py-6">{children}</figure>;
+}
+
+export function WineImage() {
+  return <div className="bg-gray-500 h-[400px] mx-16" />;
+}
+
+export function WineDetails() {
   return (
-    <figure className="flex flex-col gap-4 bg-gray-200 m-12 py-6">
-      <div className="bg-gray-500 h-[400px] mx-16" />
-      <figcaption className="flex flex-col items-center justify-center text-xs text-center">
-          Lorem ipsum dolor
-          <br />
-          <br />
-          Lorem ipsum dolor sit amet consectetur
-          <br />
-          <br />
-          Lorem ipsum dolor sit amet consectetur
-          <br />
-          <br />
-          Lorem ipsum dolor sit amet consectetur
-      </figcaption>
-    </figure>
+    <figcaption className="flex flex-col items-center justify-center text-xs text-center">
+      Lorem ipsum dolor
+      <br />
+      <br />
+      Lorem ipsum dolor sit amet consectetur
+      <br />
+      <br />
+      Lorem ipsum dolor sit amet consectetur
+      <br />
+      <br />
+      Lorem ipsum dolor sit amet consectetur
+    </figcaption>
   );
 }

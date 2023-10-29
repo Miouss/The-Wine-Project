@@ -1,6 +1,6 @@
 import { ShortPrez, WinePrez, ActivitiesPrez } from "./_components";
 
-export default async function Home() {
+export default function Home() {
   return (
     <main className="flex flex-col">
       <ShortPrez />
