@@ -14,6 +14,12 @@ export function BurgerMenu() {
     setIsMenuOpen(false);
   };
 
+  if (isMenuOpen) {
+    document.body.classList.add("menu-open");
+  } else {
+    document.body.classList.remove("menu-open");
+  }
+
   return (
     <>
       <OpenerButton openMenu={openMenu} />

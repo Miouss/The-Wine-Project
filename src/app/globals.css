@@ -29,3 +29,7 @@ body {
 body > * {
   width: 100%;
 }
+
+.menu-open {
+  overflow: hidden;
+}
