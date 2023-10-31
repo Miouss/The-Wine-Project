@@ -38,8 +38,8 @@ export const Socials = () => {
       {Array.from({ length: nbSocials }, (_, i) => (
         <div
           key={i}
-          className="flex-1 flex justify-center"
-          style={{ borderBottom: "1px solid white", paddingBottom: "4px"}}
+          className="flex-1 flex justify-center w-10 h-10 "
+          style={{ borderBottom: "1px solid white", paddingBottom: "4px" }}
         >
           <Image
             src={`${footerFolder}/socials${i}.svg`}

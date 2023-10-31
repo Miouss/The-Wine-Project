@@ -23,7 +23,6 @@ body {
   justify-items: center;
   align-items: center;
   overflow-x: hidden;
-  color: black;
 }
 
 body > * {

@@ -3,7 +3,7 @@ import { HeaderLogo } from "@/assets/header";
 
 export function Header() {
   return (
-    <header className="flex sticky px-4 justify-between content-center h-[70px] bg-white font-light border-b-2 border-[#727272]">
+    <header className="flex sticky px-4 justify-between content-center h-[70px] bg-white font-light border-b-[1px] border-[#727272]">
       <HeaderLogo />
 
       <div className="flex flex-col justify-center text-xs">
