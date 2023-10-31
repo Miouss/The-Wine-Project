@@ -1,4 +1,5 @@
-import { RxHamburgerMenu } from "react-icons/rx";
+import { MenuLines } from "@/assets/header";
+
 
 interface Props {
   openMenu: () => void;
@@ -6,8 +7,8 @@ interface Props {
 
 export function OpenerButton({ openMenu }: Props) {
   return (
-    <button className="w-8 h-8" onClick={openMenu}>
-      <RxHamburgerMenu className="w-full h-full" />
+    <button className="w-[34.75px] h-8" onClick={openMenu}>
+      <MenuLines />
     </button>
   );
 }

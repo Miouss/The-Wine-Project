@@ -1,32 +1,26 @@
-import { CiImageOn } from "react-icons/ci";
+import { MainLogo } from "@/assets/commons";
+import { PrezImage } from "@/assets/home";
+import { cinzel } from "@/fonts";
 
 export function ShortPrez() {
   return (
-    <section className="flex flex-col gap-16 mt-24 items-center justify-center px-12">
-      <h1 className="text-3xl">Home</h1>
-      <p className="leading-3">
-        {" "}
-        Lorem ipsum dolor sit amet consectetur
-        <br />
-        <br />
-        Quam maxime amet facere sint
-        <br />
-        <br />
-        quisquam magnam mollitia inventore
-        <br />
-        <br />
-        Lorem ipsum dolor sit amet consectetur
-        <br />
-        <br />
-        Quam maxime amet facere sint
-        <br />
-        <br />
-        quisquam magnam mollitia inventore
-        <br />
-        <br />
-      </p>
-      <div className="border-2 border-black">
-        <CiImageOn className="rounded-full h-[42vh] w-full" />
+    <section className="flex flex-col gap-16 mt-20 items-center justify-center px-12">
+      <MainLogo />
+      <div className="flex flex-col gap-4">
+        <h2
+          className={`text-2xl font-normal ${cinzel.className} text-[#B67561]`}
+        >
+          LES CLÉS DU PLAISIR
+        </h2>
+        <p>
+          Chaque gorgée vous transporte dans un voyage sensoriel, évoquant la
+          beauté de cette région tout en offrant une expérience gustative
+          inoubliable.
+        </p>
+      </div>
+
+      <div className="relative w-screen h-[360px]">
+        <PrezImage />
       </div>
     </section>
   );

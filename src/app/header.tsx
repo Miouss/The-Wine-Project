@@ -1,16 +1,14 @@
-import { CiImageOn } from "react-icons/ci";
 import { BurgerMenu } from "./_components";
+import { HeaderLogo } from "@/assets/header";
 
 export function Header() {
   return (
-    <header className="flex sticky p-4 justify-between">
-      <CiImageOn className="rounded-full w-12 h-12" />
-      <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl font-bold flex-1 self-end text-center">
-        Vigneron
-      </h2>
-      <div className="flex flex-col items-center">
+    <header className="flex sticky px-4 justify-between content-center h-[70px] bg-white font-light border-b-2 border-[#727272]">
+      <HeaderLogo />
+
+      <div className="flex flex-col justify-center text-xs">
         <BurgerMenu />
-        <h2 className="text-xs text-center">Menu</h2>
+        <h2 className="text-center">Menu</h2>
       </div>
     </header>
   );

@@ -1,6 +1,7 @@
 import { useState, AnimationEvent } from "react";
 import styled from "styled-components";
 import { CloserButton, SwitchLangButton } from ".";
+import { MainLogo } from "@/assets/commons";
 
 interface MenuProps {
   closeMenu: () => void;
@@ -35,20 +36,31 @@ export function Content({ closeMenu }: MenuProps) {
         <SwitchLangButton />
       </section>
 
-      <section className="mt-32 flex-1 flex flex-col items-center justify-center">
-        <h2 className="text-2xl font-bold text-center">MARQUE</h2>
-
-        <nav className="flex-1 mt-24">
-          <ul className="flex flex-col gap-4 mt-4 justify-center">
-            <a href={"/"}>Home</a>
-            <a href={"/contact"}>Contact</a>
-            <a href={"/wines"}>Accueil</a>
-            <a href={"/activities"}>Activities</a>
-            <a href={"/about"}>About us</a>
-          </ul>
+      <section className="flex-1 flex flex-col items-center justify-center">
+        <nav className="flex-1 mt-24 w-full">
+          <menu className="flex flex-col gap-4 mt-4 justify-center text-right p-10 text-2xl">
+            <NavBtn href={"home"}>Home</NavBtn>
+            <NavBtn href={"wines"}>Wines</NavBtn>
+            <NavBtn href={"activities"}>Activities</NavBtn>
+            <NavBtn href={"about"}>About us</NavBtn>
+            <NavBtn href={"contact"}>Contact</NavBtn>
+          </menu>
         </nav>
+        <MainLogo />
       </section>
     </AnimatedDiv>
+  );
+}
+
+interface NavBtnProps extends React.PropsWithChildren {
+  href: string;
+}
+
+function NavBtn({ href, children }: NavBtnProps) {
+  return (
+    <div className="border-r-2 border-black pr-4">
+      <a href={`/${href}`}>{children}</a>
+    </div>
   );
 }
 

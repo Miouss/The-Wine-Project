@@ -17,12 +17,12 @@
 }
 
 body {
+  font-family: 'Montserrat';
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-
-  background: wheat;
+  overflow-x: hidden;
   color: black;
 }
 

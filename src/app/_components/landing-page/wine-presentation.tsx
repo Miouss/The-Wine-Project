@@ -1,94 +1,47 @@
+import { BottleImage } from "@/assets/home";
+
 export function WinePrez() {
   return (
     <section className="flex flex-col gap-16">
-      <div className="relative h-screen w-full flex">
-        <div className="absolute h-screen w-[100%] bg-gray-400 z-[-1]" />
-        <div className="h-[50vh] self-end flex flex-col gap-6 pl-12">
-          <h3 className="text-4xl">VIN DE LA REGION</h3>
-          <p className="text-base leading-3">
-            Lorem ipsum dolor sit amet consectetur
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet consectetur
-            <br />
-            <br />
-          </p>
-        </div>
-      </div>
-      <WineCard>
-        <WineDescription>
-          <WineImage />
-          <WineDetails />
-        </WineDescription>
-      </WineCard>
+      <WineBottle
+        nb={1}
+        title={"La clé de l'Aube"}
+        description="Succombez à la passion en bouteille - Ouvrez les portes de l'élégance grâce à la clé du soir "
+      />
 
-      <WineCard>
-        <WineDescription>
-          <WineImage />
-          <WineDetails />
-        </WineDescription>
-      </WineCard>
+      <WineBottle
+        nb={2}
+        title={"La clé des Rosées"}
+        description="Succombez à la passion en bouteille - Ouvrez les portes de l'élégance grâce à la clé du soir "
+      />
 
-      <WineCard>
-        <WineDescription>
-          <WineImage />
-          <WineDetails />
-        </WineDescription>
-      </WineCard>
+      <WineBottle
+        nb={3}
+        title={"La clé du Soir"}
+        description="Succombez à la passion en bouteille - Ouvrez les portes de l'élégance grâce à la clé du soir "
+      />
     </section>
   );
 }
 
-export function WineCard({ children }: React.PropsWithChildren) {
-  return <div className="flex flex-col">{children}</div>;
+interface WineBottleProps {
+  nb: number;
+  title: string;
+  description: string;
 }
 
-export function WineHeader() {
-  return <h4 className="text-xl pl-16">Grand Vin 2020</h4>;
-}
-
-export function WineDescription({ children }: React.PropsWithChildren) {
-  return <figure className="flex flex-col gap-4 m-12 py-6">{children}</figure>;
-}
-
-export function WineImage() {
-  return <div className="bg-gray-500 h-[400px] mx-16" />;
-}
-
-export function WineDetails() {
+function WineBottle({ nb, title, description }: WineBottleProps) {
   return (
-    <figcaption className="flex flex-col items-center justify-center text-xs text-center">
-      Lorem ipsum dolor
-      <br />
-      <br />
-      Lorem ipsum dolor sit amet consectetur
-      <br />
-      <br />
-      Lorem ipsum dolor sit amet consectetur
-      <br />
-      <br />
-      Lorem ipsum dolor sit amet consectetur
-    </figcaption>
+    <div className="flex flex-col">
+      <figure className="flex flex-col gap-4 m-12 py-6 border-b-4 border-[#B67561]">
+        <div className="mx-16 flex justify-center">
+          <BottleImage nb={nb} alt={title} />
+        </div>
+        <figcaption className="flex flex-col items-center justify-center text-xs text-center">
+          <h4 className="text-xl">{title}</h4>
+          <p>{description}</p>
+        </figcaption>
+      </figure>
+    </div>
   );
 }
