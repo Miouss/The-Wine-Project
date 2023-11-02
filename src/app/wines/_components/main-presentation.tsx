@@ -1,12 +1,13 @@
 import { WinePrezImage, WinePrezLogo } from "@/assets/wines";
 import { cinzel } from "@/fonts";
+import { DivAbsoluteFullParent, HeaderSectionFullScreen } from "@/styled-components";
 
 export function MainPrez() {
   return (
-    <section className="relative flex flex-col gap-16 h-[calc(100vh-70px)]">
-      <div className="absolute w-full z-0 h-full">
+    <HeaderSectionFullScreen>
+      <DivAbsoluteFullParent>
         <WinePrezImage />
-      </div>
+      </DivAbsoluteFullParent>
       <div className="relative flex justify-center pt-32">
         <span className="absolute z-0">
           <WinePrezLogo />
@@ -18,6 +19,6 @@ export function MainPrez() {
           LA CAVE
         </h1>
       </div>
-    </section>
+    </HeaderSectionFullScreen>
   );
 }
