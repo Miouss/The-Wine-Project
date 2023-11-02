@@ -11,7 +11,7 @@ import {
 
 export default function Wine() {
   return (
-    <main className="flex flex-col">
+    <main className="relative z-0 flex flex-col">
       <WineSummary />
 
       <div className={`border-t-2 border-[${tertiary}] mx-24 my-20`} />

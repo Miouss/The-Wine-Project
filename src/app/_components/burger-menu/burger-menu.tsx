@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Content, OpenerButton } from ".";
 
 export function BurgerMenu() {
@@ -14,11 +14,13 @@ export function BurgerMenu() {
     setIsMenuOpen(false);
   };
 
-  if (isMenuOpen) {
-    document.body.classList.add("menu-open");
-  } else {
-    document.body.classList.remove("menu-open");
-  }
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add("menu-open");
+    } else {
+      document.body.classList.remove("menu-open");
+    }
+  }, [isMenuOpen]);
 
   return (
     <>
