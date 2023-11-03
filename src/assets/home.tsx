@@ -18,6 +18,14 @@ export const HistoryImage = () => (
   />
 );
 
+export const LegacyImage = () => (
+  <Image
+    src={`${homeFolder}/legacy.jpg`}
+    alt={"A man far way on a desert road looking at the horizon"}
+    fill={true}
+  />
+);
+
 export const PlaceHolderImage = () => (
   <Image
     src={""}

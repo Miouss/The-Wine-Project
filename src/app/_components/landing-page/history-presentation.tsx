@@ -1,14 +1,13 @@
 import { HistoryImage, HistoryStyle } from "@/assets/home";
-import { black } from "@/colors";
 import { cinzel } from "@/fonts";
 
 export function HistoryPrez() {
   return (
-    <section className="relative h-screen w-full flex flex-col">
+    <section className="relative h-screen w-full flex flex-col mb-48">
       <div className="absolute h-screen w-[100%]">
         <HistoryImage />
       </div>
-          <div className={`relative h-[50vh] flex flex-col gap-6 px-12 pt-24`}>
+      <div className={`relative h-[50vh] flex flex-col gap-6 px-12 pt-24`}>
         <h3 className={`text-4xl  ${cinzel.className} font-normal`}>
           Une Histoire,
           <br /> Un Homme,

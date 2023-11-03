@@ -4,7 +4,7 @@ import { cinzel } from "@/fonts";
 
 export function WineSummary() {
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col pb-20">
       <h2
         className={`${cinzel.className} text-5xl font-bold text-center mt-40 mb-14`}
       >

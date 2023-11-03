@@ -2,7 +2,7 @@ import { tertiary } from "@/colors";
 
 export function Informations() {
   return (
-    <section className="flex flex-col px-16 gap-10">
+    <section className="flex flex-col px-16 gap-10 py-20">
       <InformationsContainer title={"Information"}>
         Ce vin rosé est d&apos;une légèreté rafraîchissante, avec des arômes
         subtils de fruits rouges et une acidité vive. <br /> <br /> Il est
