@@ -1,49 +1,59 @@
 import { DomainImage, ProcessImage } from "@/assets/about";
-import { black } from "@/colors";
 import { cinzel } from "@/fonts";
 
-export function ComplexStories() {
-  return (
-    <section className="flex flex-col">
-      <StoryIllustration title="LE DOMAINE" image={<DomainImage />}>
-        Niché au cœur du Sud de la France, notre domaine est un sanctuaire de la
-        tradition viticole et de la beauté de la région. Nos vignes
-        s&apos;épanouissent sous la douce lumière méditerranéenne, dans un sol
-        argilo-calcaire, et bénéficient d&apos;un climat chaud et ensoleillé
-        ainsi que de la brise marine, créant un terroir unique pour nos raisins
-        et des vins d&apos;une élégance exceptionnelle.
-      </StoryIllustration>
+const p1 = `Nos vignobles familiaux incarnent notre passion pour le vin et sont
+          l'essence même de notre entreprise, où l'amour de la terre
+          et la culture de la vigne donnent naissance à des vins qui réchauffent
+          les cœurs, perpétuant l'héritage de notre région viticole avec
+          chaque bouteille que nous créons`;
 
-      <StoryParagraph>
-        Nos vignobles familiaux incarnent notre passion pour le vin et sont
-        l&apos;essence même de notre entreprise, où l&apos;amour de la terre et
-        la culture de la vigne donnent naissance à des vins qui réchauffent les
-        cœurs, perpétuant l&apos;héritage de notre région viticole avec chaque
-        bouteille que nous créons.
-      </StoryParagraph>
-
-      <StoryIllustration title="LE PROCESSUS" image={<ProcessImage />}>
-        Tout commence par une récolte méticuleuse, un rituel intime où chaque
-        grappe de raisin est choisie à son apogée de maturité. Les raisins,
-        gardiens de secrets, sont acheminés vers la cave, où ils révèlent leurs
-        mystères au cours du processus de vinification.
-      </StoryIllustration>
-
-      <StoryParagraph>
-        Chaque bouteille devient une invitation à explorer l&apos;âme de notre
+const p2 = `Chaque bouteille devient une invitation à explorer l&apos;âme de notre
         domaine, à découvrir les trésors cachés dans chaque gorgée, et à percer
         le mystère de notre passion inébranlable pour le vin. Rejoignez-nous
         dans cette aventure vinique, où chaque bouteille est une clé pour
-        déverrouiller les plaisirs les plus exquis que le vin peut offrir.
-      </StoryParagraph>
+        déverrouiller les plaisirs les plus exquis que le vin peut offrir.`;
 
-      <StoryParagraph text={"left"}>
-        La fermentation, orchestrée par notre vigneron passionné, transforme le
+const p3 = `La fermentation, orchestrée par notre vigneron passionné, transforme le
         sucre en alcool, créant une alchimie sensorielle. L&apos;élevage en fûts
         ou en cuves est une période de maturation mystique, donnant naissance à
         des saveurs et des arômes qui semblent surgir d&apos;un univers
-        enchanté.
-      </StoryParagraph>
+        enchanté.`;
+
+export function ComplexStories() {
+  return (
+    <section className="flex flex-col lg:gap-64">
+      <StoryIllustration
+        title="LE DOMAINE"
+        image={<DomainImage />}
+        isReverse={true}
+      >
+        <p className="font-light lg:text-xl">
+          Niché au cœur du Sud de la France, notre domaine est un sanctuaire de
+          la tradition viticole et de la beauté de la région. Nos vignes
+          s&apos;épanouissent sous la douce lumière méditerranéenne, dans un sol
+          argilo-calcaire, et bénéficient d&apos;un climat chaud et ensoleillé
+          ainsi que de la brise marine, créant un terroir unique pour nos
+          raisins et des vins d&apos;une élégance exceptionnelle.
+        </p>
+        <p className="for-desktop font-light text-xl">{p1}</p>
+      </StoryIllustration>
+
+      <StoryParagraph>{p1}</StoryParagraph>
+
+      <StoryIllustration title="LE PROCESSUS" image={<ProcessImage />}>
+        <p className="font-light lg:text-xl">
+          Tout commence par une récolte méticuleuse, un rituel intime où chaque
+          grappe de raisin est choisie à son apogée de maturité. Les raisins,
+          gardiens de secrets, sont acheminés vers la cave, où ils révèlent
+          leurs mystères au cours du processus de vinification.
+        </p>
+        <p className="for-desktop font-light  text-xl">{p2}</p>
+        <p className="for-desktop font-light  text-xl">{p3}</p>
+      </StoryIllustration>
+
+      <StoryParagraph>{p2}</StoryParagraph>
+
+      <StoryParagraph text={"left"}>{p3}</StoryParagraph>
     </section>
   );
 }
@@ -51,22 +61,32 @@ export function ComplexStories() {
 interface StoryIllustationProps extends React.PropsWithChildren {
   title: string;
   image: React.ReactNode;
+  isReverse?: boolean;
 }
 
 const StoryIllustration = ({
   title,
   image,
-  children: paragraph,
+  isReverse,
+  children: paragraphs,
 }: StoryIllustationProps) => (
-  <div className="relative h-screen w-screen gap-4 flex flex-col justify-end">
-    <div className="absolute z-0 h-full w-full">{image}</div>
+  <div
+    className={`relative h-screen max-h-[800px] w-screen max-w-[1184px] flex flex-col 
+    lg:${isReverse ? "flex-row" : "flex-row-reverse"} lg:${
+      !isReverse && "self-end"
+    } 
+    gap-4 lg:gap-20 lg:justify-between`}
+  >
+    <div className="absolute lg:relative z-0 h-full lg:h-[800px] w-full lg:w-[512px]">
+      {image}
+    </div>
     <div
-      className={`relative z-1 flex flex-col gap-4 text-white px-16 pb-20 bg-gradient-to-t from-[${black}] via-[${black}]`}
+      className={`justify-end lg:self-end relative z-1 flex-1 flex flex-col gap-4 text-white lg:text-black px-16 pb-20 lg:p-0 bg-gradient-to-t from-black via-transparant lg:bg-none `}
     >
-      <h4 className={`${cinzel.className} text-2xl`}>
+      <h4 className={`${cinzel.className} text-4xl lg:text-6xl`}>
         {title.toLocaleUpperCase()}
       </h4>
-      <p className="font-light">{paragraph}</p>
+      {paragraphs}
     </div>
   </div>
 );
@@ -76,8 +96,9 @@ interface StoryParagraphProps extends React.PropsWithChildren {
 }
 
 const StoryParagraph = ({ text = "right", children }: StoryParagraphProps) => (
-  <p className={`px-16 py-20 text-${text} text-white font-light bg-[${black}]`}>
-    {" "}
-    {children}{" "}
+  <p
+    className={`for-mobile px-16 py-20 text-${text} text-white font-light bg-black`}
+  >
+    {children}
   </p>
 );

@@ -15,13 +15,12 @@ export const Distinctions = () => {
   const nbDistinctions = 4;
 
   return (
-    <ol className="w-full flex flex-wrap justify-around">
+    <ol className="h-full w-full flex gap-4">
       {Array.from({ length: nbDistinctions }, (_, i) => (
-        <div key={i} className="flex-1 flex justify-center">
+        <div key={i} className="relative w-10 h-10">
           <Image
             src={`${footerFolder}/distinction${i}.svg`}
-            width={40}
-            height={40}
+            fill={true}
             alt={`Logo distinction ${i}`}
           />
         </div>

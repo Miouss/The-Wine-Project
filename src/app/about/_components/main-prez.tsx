@@ -1,31 +1,12 @@
-import { WinePrezLogo } from "@/assets/wines";
 import { PrezImage } from "@/assets/about";
-import { cinzel } from "@/fonts";
-import {
-  HeaderSectionFullScreen,
-  DivAbsoluteFullParent,
-} from "@/styled-components";
+import { DivFullscreenWithLogo } from "@/components/div-fullscreen";
 
 export function MainPrez() {
   return (
     <section className="flex flex-col gap-16 mb-16">
-      <div className="relative flex flex-col gap-16 h-[calc(100vh-70px)]">
-        <DivAbsoluteFullParent>
-          <PrezImage />
-        </DivAbsoluteFullParent>
-        <div className="relative flex justify-center pt-32">
-          <span className="absolute z-0">
-            <WinePrezLogo />
-          </span>
+      <DivFullscreenWithLogo bgImage={<PrezImage />} title={"L'HISTOIRE"} />
 
-          <h1
-            className={`${cinzel.className} font-bold relative text-5xl text-center mt-10 mb-14 text-white`}
-          >
-            L&apos;HISTOIRE
-          </h1>
-        </div>
-      </div>
-      <p className="text-left font-light px-16">
+      <p className="text-left font-light mx-16 max-w-[800px] self-center">
         Il y a plusieurs décennies, une petite parcelle de terre était transmise
         de génération en génération au sein de la famille de Gérard de Vir.
         Cette parcelle a été le point de départ d&apos;une histoire

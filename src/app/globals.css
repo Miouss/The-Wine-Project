@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -31,4 +31,24 @@ body > * {
 
 .menu-open {
   overflow: hidden;
+}
+
+@media (max-width: 1023px) {
+  .for-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .for-mobile {
+    display: none;
+  }
+
+  body {
+    overflow-y: scroll !important;
+  }
+
+  .no-filter-desktop {
+    filter: brightness(100%) !important;
+  }
 }

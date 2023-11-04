@@ -3,7 +3,7 @@ interface Props extends React.PropsWithChildren {
 }
 
 export const DivAbsoluteFullParent = ({ children, className }: Props) => (
-  <section className={`absolute w-full z-0 h-full ${className}`}>
+  <div className={`absolute w-full z-0 h-full ${className}`}>
     {children}
-  </section>
+  </div>
 );

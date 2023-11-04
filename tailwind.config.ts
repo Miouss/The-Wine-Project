@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import { black, tertiary } from "./src/colors";
 
 const config: Config = {
   content: [
@@ -11,8 +12,21 @@ const config: Config = {
       backgroundImage: {
         footer: "url('/assets/footer/bg.png')",
       },
+      backgroundColor: {
+        black,
+        tertiary,
+      },
+      textColor: {
+        black,
+        tertiary,
+      },
+      gradientColorStops: {
+        black,
+        tertiary,
+      },
     },
-  },
-  plugins: [],
+    plugins: [],
+  }
 };
-export default config
+
+export default config;
