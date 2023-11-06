@@ -47,9 +47,10 @@ const SimpleStoryItem = ({
   children,
 }: SimpleStoryProps) => (
   <div
-    className={`flex flex-col lg:${isReverse ? "flex-row" : "flex-row-reverse"}
+    className={`flex flex-col ${
+      isReverse ? "lg:flex-row" : "lg:flex-row-reverse"
+    }
     gap-16
-    lg:gap-[unset]
     justify-between
     mb-16
     lg:mb-0
@@ -62,7 +63,7 @@ const SimpleStoryItem = ({
     </div>
     <div className="flex flex-col gap-4 justify-center">
       <TitleDesktop>{title}</TitleDesktop>
-      <p className="font-light max-w-[512px] self-center">{children}</p>
+      <p className="font-light lg:max-w-[512px] self-center px-16 lg:px-0">{children}</p>
     </div>
   </div>
 );

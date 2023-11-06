@@ -21,7 +21,9 @@ const p3 = `La fermentation, orchestrée par notre vigneron passionné, transfor
 
 export function ComplexStories() {
   return (
-    <section className="flex flex-col lg:gap-64">
+    <section
+      className="flex flex-col lg:gap-64"
+    >
       <StoryIllustration
         title="LE DOMAINE"
         image={<DomainImage />}
@@ -72,8 +74,8 @@ const StoryIllustration = ({
 }: StoryIllustationProps) => (
   <div
     className={`relative h-screen max-h-[800px] w-screen max-w-[1184px] flex flex-col 
-    lg:${isReverse ? "flex-row" : "flex-row-reverse"} lg:${
-      !isReverse && "self-end"
+    ${isReverse ? "lg:flex-row" : "lg:flex-row-reverse"} ${
+      !isReverse && "lg:self-end"
     } 
     gap-4 lg:gap-20 lg:justify-between`}
   >
@@ -81,7 +83,7 @@ const StoryIllustration = ({
       {image}
     </div>
     <div
-      className={`justify-end lg:self-end relative z-1 flex-1 flex flex-col gap-4 text-white lg:text-black px-16 pb-20 lg:p-0 bg-gradient-to-t from-black via-transparant lg:bg-none `}
+      className={`justify-end lg:self-end relative z-1 flex-1 flex flex-col gap-4 text-white lg:text-black px-16 pb-20 lg:p-0 bg-gradient-to-t from-black via-black via-20% via-transparant lg:bg-none `}
     >
       <h4 className={`${cinzel.className} text-4xl lg:text-6xl`}>
         {title.toLocaleUpperCase()}

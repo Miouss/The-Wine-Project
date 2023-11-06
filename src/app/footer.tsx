@@ -9,7 +9,7 @@ export function Footer() {
         <FooterLogo />
       </div>
 
-      <div className="for-desktop absolute top-0 left-0 flex w-full h-full justify-center mt-[85px]">
+      <div className="for-desktop absolute top-0 left-0 flex w-full justify-center mt-[85px]">
         <div>
           <FooterLogo />
         </div>
