@@ -15,6 +15,9 @@ const config: Config = {
       backgroundColor: {
         black,
         tertiary,
+        "wine-white": "#F8F6DF",
+        "wine-pink": "#FAEBEE",
+        "wine-red": "#FAEEEB",
       },
       textColor: {
         black,
@@ -26,7 +29,7 @@ const config: Config = {
       },
     },
     plugins: [],
-  }
+  },
 };
 
 export default config;

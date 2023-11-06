@@ -48,7 +48,6 @@ export const BottleImage = ({ nb, alt }: { nb: number; alt: string }) => (
   <Image
     src={`${homeFolder}/bottle${nb}.png`}
     alt={`Bottle of ${alt}`}
-    width={80}
-    height={240}
+    fill={true}
   />
 );
