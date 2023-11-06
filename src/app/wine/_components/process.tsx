@@ -3,7 +3,7 @@ import { cinzel } from "@/fonts";
 
 export function Process() {
   return (
-    <section className="relative flex h-[100vh]">
+    <section className="for-mobile relative flex h-[100vh]">
       <div className="absolute z-0 h-full w-full">
         <ProcessImage />
       </div>

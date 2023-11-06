@@ -4,7 +4,9 @@ export function Navbar() {
   return (
     <section className="for-mobile flex-1 flex flex-col items-center justify-center">
       <NavListMobile />
-      <MainLogo />
+      <div className="relative w-[136px] h-[63px]">
+        <MainLogo />
+      </div>
     </section>
   );
 }

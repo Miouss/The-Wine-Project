@@ -4,11 +4,13 @@ import { cinzel } from "@/fonts";
 
 export function Plates() {
   return (
-    <section className="text-center flex flex-col gap-8">
-      <h5 className={`${cinzel.className} font-bold text-3xl`}>
+    <section className="text-center flex flex-col gap-8 lg:gap-20 lg:max-w-[928px] self-center lg:pb-64">
+      <h5
+        className={`${cinzel.className} text-3xl lg:leading-normal lg:text-[86px]`}
+      >
         QUELQUES PLATS
       </h5>
-      <div className="flex flex-col text-left">
+      <div className="flex flex-col flex-wrap lg:flex-row lg:justify-between lg:gap-y-32 text-left">
         <Plate
           title={"Sangria au Rosé"}
           ingredients={[
@@ -78,18 +80,20 @@ const Plate = ({
   children: description,
   imgNb = 0,
 }: PlateProps) => (
-  <div className="flex flex-col gap-10 font-light pb-20">
+  <div className="flex flex-col gap-10 lg:max-w-[390px] last:m-auto font-light pb-20 lg:pb-0">
     <div className="relative w-full h-[200px]">
       <PlateImage nb={imgNb} />
     </div>
-    <div className="flex flex-col gap-4 px-16">
-      <h5 className={`text-[${tertiary}] text-2xl`}>{title}</h5>
-      <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 px-16 lg:px-0">
+      <h5 className={`text-tertiary text-2xl lg:text-3xl`}>{title}</h5>
+      <div className="flex flex-col gap-4 lg:text-xl">
         <div>
           <h6>Ingrédients :</h6>
           <ul className="list-disc pl-20">
             {ingredients.map((ingredient) => (
-              <li key={ingredient}>{ingredient}</li>
+              <li key={ingredient} className="whitespace-nowrap">
+                {ingredient}
+              </li>
             ))}
           </ul>
         </div>

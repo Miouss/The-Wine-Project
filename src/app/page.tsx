@@ -3,6 +3,7 @@ import {
   WinePrez,
   ActivitiesPrez,
   HistoryPrez,
+  ExceptionPrez,
 } from "./_components";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <HistoryPrez />
       <WinePrez />
       <ActivitiesPrez />
+      <ExceptionPrez />
     </main>
   );
 }

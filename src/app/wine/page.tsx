@@ -14,7 +14,7 @@ export default function Wine() {
     <main className="relative z-0 flex flex-col">
       <WineSummary />
 
-      <div className={`h-[2px] bg-[${tertiary}] mx-24`} />
+      <div className={`for-mobile h-[2px] bg-tertiary mx-24`} />
 
       <Informations />
 

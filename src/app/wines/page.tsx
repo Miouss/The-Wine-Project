@@ -1,28 +1,8 @@
 import { MainPrez } from "./_components/main-presentation";
 import { WineRedImage, WineRoseImage, WineWhiteImage } from "@/assets/wines";
-import { WineBottle } from "../_components";
+import { WineBottles, WinesType } from "../_components";
 import { WineIllustration } from "./_components";
 
-interface Wine {
-  title: string;
-  description: string;
-  isImgAtRight?: boolean;
-}
-
-const wine = (...titles: string[]): Wine[] =>
-  titles.map((title, i) => ({
-    title,
-    description:
-      "Succombez à la passion en bouteille - Ouvrez les portes de l'élégance grâce à la clé du soir",
-    isImgAtRight: i % 2 !== 0,
-  }));
-
-const WineBottles = ({ wines } : {wines: Wine[]}) =>
-  wines.map((wine, i) => <WineBottle key={wine.title} nb={i + 1} {...wine} />);
-
-const pinkWines = wine("La clé des Rosées", "Perle Rosée", "Lueur Rosée");
-const redWines = wine("La clé du Soir", "Le Pourpre");
-const whiteWines = wine("La clé de l'aube");
 
 export default function Wines() {
   return (
@@ -35,7 +15,7 @@ export default function Wines() {
           title="Les Rosées"
         />
 
-        <WineBottles wines={pinkWines} />
+        <WineBottles winesType={WinesType.PINK} />
       </WineSection>
       <WineSection>
         <WineIllustration
@@ -43,7 +23,7 @@ export default function Wines() {
           wineType="white"
           title="Les Blancs"
         />
-        <WineBottles wines={whiteWines} />
+        <WineBottles winesType={WinesType.WHITE} />
       </WineSection>
       <WineSection>
         <WineIllustration
@@ -51,7 +31,7 @@ export default function Wines() {
           wineType="red"
           title="Les Rouges"
         />
-        <WineBottles wines={redWines} />
+        <WineBottles winesType={WinesType.RED} />
       </WineSection>
     </main>
   );

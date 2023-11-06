@@ -4,6 +4,7 @@ export * from "./activities-presentation";
 export * from "./short-presentation";
 export * from "./wine-presentation";
 export * from "./history-presentation";
+export * from "./exception-presentation";
 
 export * from "../../components/wine-bottle";
 export * from "./menuMobile";

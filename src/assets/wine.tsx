@@ -6,8 +6,7 @@ export const BottleImage = () => (
   <Image
     src={`${wineFolder}/bottle.png`}
     alt={"bottle of wine"}
-    width={186}
-    height={559}
+    fill={true}
   />
 );
 
@@ -20,12 +19,20 @@ export const ProcessImage = () => (
   />
 );
 
+export const TchinDesktopImage = () => (
+  <Image
+    src={`${wineFolder}/tchin-desktop.png`}
+    alt={"two glasses of wine, holding by two differents hands, tchining"}
+    fill={true}
+    style={{ objectFit: "cover" }}
+  />
+);
+
 export const DistinctionImage = ({ nb = 0 }) => (
   <Image
     src={`${wineFolder}/distinction${nb}.svg`}
     alt={"Distinction medal for win"}
-    width={80}
-    height={80}
+    fill={true}
   />
 );
 
