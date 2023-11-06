@@ -1,4 +1,4 @@
-import { cinzel } from "@/fonts";
+
 
 interface Props {
   illustration: JSX.Element;
@@ -22,7 +22,7 @@ export function WineIllustration({ illustration, title, wineType }: Props) {
         className={`relative flex-1 flex items-end bg-gradient-to-t lg:bg-none from-black lg:from-transparent via-black lg:via-transparent via-10%`}
       >
         <h3
-          className={`${cinzel.className} font-normal relative lg:w-full text-3xl lg:text-6xl text-center pl-16 lg:p-0 mb-14 lg:mb-32 text-white lg:text-black lg:self-end`}
+          className={`font-cinzel font-normal relative lg:w-full text-3xl lg:text-6xl text-center pl-16 lg:p-0 mb-14 lg:mb-32 text-white lg:text-black lg:self-end`}
         >
           {title}
         </h3>

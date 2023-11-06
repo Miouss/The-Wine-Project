@@ -7,4 +7,5 @@ export const montserrat = Montserrat({
 export const cinzel = Cinzel({
   subsets: ["latin"],
   display: "swap",
+  variable: "--cinzel-font",
 });

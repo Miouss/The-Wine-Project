@@ -1,12 +1,12 @@
 import { PlateImage } from "@/assets/wine";
 import { tertiary } from "@/colors";
-import { cinzel } from "@/fonts";
+
 
 export function Plates() {
   return (
     <section className="text-center flex flex-col gap-8 lg:gap-20 lg:max-w-[928px] self-center lg:pb-64">
       <h5
-        className={`${cinzel.className} text-3xl lg:leading-normal lg:text-[86px]`}
+        className={`font-cinzel text-3xl lg:leading-normal lg:text-[86px]`}
       >
         QUELQUES PLATS
       </h5>

@@ -1,5 +1,5 @@
 import { DomainImage, ProcessImage } from "@/assets/about";
-import { cinzel } from "@/fonts";
+
 
 const p1 = `Nos vignobles familiaux incarnent notre passion pour le vin et sont
           l'essence même de notre entreprise, où l'amour de la terre
@@ -85,7 +85,7 @@ const StoryIllustration = ({
     <div
       className={`justify-end lg:self-end relative z-1 flex-1 flex flex-col gap-4 text-white lg:text-black px-16 pb-20 lg:p-0 bg-gradient-to-t from-black via-black via-20% via-transparant lg:bg-none `}
     >
-      <h4 className={`${cinzel.className} text-4xl lg:text-6xl`}>
+      <h4 className={`font-cinzel text-4xl lg:text-6xl`}>
         {title.toLocaleUpperCase()}
       </h4>
       {paragraphs}

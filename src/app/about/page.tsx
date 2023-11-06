@@ -1,9 +1,9 @@
-import { ComplexStories, Family, MainPrez, SimpleStories } from "./_components";
+import { ComplexStories, Family, Prez, SimpleStories } from "./_components";
 
 export default function Home() {
   return (
     <main className="flex flex-col lg:gap-64">
-      <MainPrez />
+      <Prez />
       <SimpleStories />
       <ComplexStories />
       <Family />

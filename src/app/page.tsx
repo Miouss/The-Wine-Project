@@ -1,5 +1,5 @@
 import {
-  ShortPrez,
+  Prez,
   WinePrez,
   ActivitiesPrez,
   HistoryPrez,
@@ -9,7 +9,7 @@ import {
 export default function Home() {
   return (
     <main className="flex flex-col">
-      <ShortPrez />
+      <Prez />
       <HistoryPrez />
       <WinePrez />
       <ActivitiesPrez />

@@ -1,12 +1,12 @@
 import { FamilyImage } from "@/assets/about";
 import { tertiary } from "@/colors";
-import { cinzel } from "@/fonts";
+
 
 export function Family() {
   return (
     <section className="flex flex-col py-48 px-6 lg:px-0 gap-20 max-w-[800px] self-center">
       <h4
-        className={`${cinzel.className} text-3xl lg:text-[86px] lg:leading-normal text-center`}
+        className={`font-cinzel text-3xl lg:text-[86px] lg:leading-normal text-center`}
       >
         LA FAMILLE
       </h4>
@@ -42,7 +42,7 @@ const FamilyMember = ({ name, title, nb = 0 }: FamilyMemberProps) => (
         <FamilyImage nb={nb} />
       </div>
       <figcaption className="flex flex-col gap-1 text-center">
-        <h5 className={`${cinzel.className}`}>{name}</h5>
+        <h5 className={`font-cinzel`}>{name}</h5>
         <p>{title}</p>
       </figcaption>
     </figure>

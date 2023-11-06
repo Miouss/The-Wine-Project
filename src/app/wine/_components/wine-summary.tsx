@@ -1,5 +1,5 @@
 import { BottleImage } from "@/assets/wine";
-import { cinzel } from "@/fonts";
+
 
 export function WineSummary() {
   return (
@@ -13,7 +13,7 @@ export function WineSummary() {
           <span>0.75 L</span>
         </h4>
       </div>
-      <h2 className={`${cinzel.className} text-5xl lg:text-6xl text-center`}>
+      <h2 className={`font-cinzel text-5xl lg:text-6xl text-center`}>
         LA CLÉ DES ROSÉES
       </h2>
       <h3 className="flex flex-col gap-6 lg:gap-16 px-16 lg:text-2xl">
@@ -22,7 +22,7 @@ export function WineSummary() {
           grâce à la clé des Rosées
         </span>
         <span
-          className={`text-tertiary ${cinzel.className} text-5xl font-bold text-center px-16`}
+          className={`text-tertiary font-cinzel text-5xl font-bold text-center px-16`}
         >
           80€
         </span>

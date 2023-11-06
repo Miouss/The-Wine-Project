@@ -1,15 +1,13 @@
 import { MainLogo } from "@/assets/commons";
 
-export function Navbar() {
-  return (
-    <section className="for-mobile flex-1 flex flex-col items-center justify-center">
-      <NavListMobile />
-      <div className="relative w-[136px] h-[63px]">
-        <MainLogo />
-      </div>
-    </section>
-  );
-}
+export const NavMenu = () => (
+  <section className="for-mobile flex-1 flex flex-col items-center justify-center">
+    <NavListMobile />
+    <div className="relative w-[136px] h-[63px]">
+      <MainLogo />
+    </div>
+  </section>
+);
 
 const NavListMobile = () => (
   <nav className="flex-1 mt-24 w-full">
@@ -22,8 +20,6 @@ const NavListMobile = () => (
     </menu>
   </nav>
 );
-
-
 
 interface NavBtnProps extends React.PropsWithChildren {
   href: string;

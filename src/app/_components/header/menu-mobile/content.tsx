@@ -3,7 +3,7 @@
 import { useState, AnimationEvent } from "react";
 import styled from "styled-components";
 import { CloserButton, SwitchLangButton } from ".";
-import { Navbar } from "..";
+import { NavMenu } from "./nav-menu";
 
 interface MenuProps {
   closeMenu: () => void;
@@ -38,7 +38,7 @@ export function Content({ closeMenu }: MenuProps) {
         <SwitchLangButton />
       </section>
 
-      <Navbar />
+      <NavMenu />
     </AnimatedDiv>
   );
 }

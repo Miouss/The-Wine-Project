@@ -27,6 +27,9 @@ const config: Config = {
         black,
         tertiary,
       },
+      fontFamily: {
+        cinzel: "var(--cinzel-font)",
+      },
     },
     plugins: [],
   },

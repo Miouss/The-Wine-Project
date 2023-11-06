@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Header, Footer } from ".";
-import { montserrat } from "@/fonts";
+import { montserrat, cinzel } from "@/fonts";
 import "./globals.css";
-import { black } from "@/colors";
 
 export const metadata: Metadata = {
   title: "Les Trois Clés",
@@ -15,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr">
-      <body className={montserrat.className} style={{ color: `${black}` }}>
+    <html lang="fr" className={`${cinzel.variable}`}>
+      <body className={`${montserrat.className} color-black`}>
         <Header />
         {children}
         <Footer />

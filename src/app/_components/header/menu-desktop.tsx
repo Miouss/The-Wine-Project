@@ -1,4 +1,4 @@
-import { SwitchLangButton } from "./burger-menu";
+import { SwitchLangButton } from "./menu-mobile";
 
 export const MenuDesktop = () => (
   <>

@@ -3,7 +3,6 @@ import { WineRedImage, WineRoseImage, WineWhiteImage } from "@/assets/wines";
 import { WineBottles, WinesType } from "../_components";
 import { WineIllustration } from "./_components";
 
-
 export default function Wines() {
   return (
     <main className="flex flex-col gap-48 mb-40">
@@ -14,7 +13,6 @@ export default function Wines() {
           wineType="pink"
           title="Les Rosées"
         />
-
         <WineBottles winesType={WinesType.PINK} />
       </WineSection>
       <WineSection>

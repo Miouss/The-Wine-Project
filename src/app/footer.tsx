@@ -1,7 +1,5 @@
 import { Distinctions, FooterLogo, Socials } from "@/assets/footer";
 
-const footerBase = "flex flex-col bg-footer bg-cover text-white font-light";
-
 export function Footer() {
   return (
     <footer className="relative px-16 lg:px-40 pt-8 lg:pt-16 py-2 lg:py-4 gap-10 lg:gap-16 flex flex-col items-center bg-footer bg-cover text-white font-light">

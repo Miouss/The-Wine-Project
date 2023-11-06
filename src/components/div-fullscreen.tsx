@@ -1,5 +1,5 @@
 import { WinePrezLogo } from "@/assets/wines";
-import { cinzel } from "@/fonts";
+
 import { DivAbsoluteFullParent } from "@/styled-components";
 import React from "react";
 
@@ -17,7 +17,7 @@ export const DivFullscreenWithLogo = ({ bgImage, title }: Props) => (
       </span>
 
       <h1
-        className={`${cinzel.className} relative text-5xl lg:text-8xl text-center mt-10 lg:mt-[calc(205px-176px)] mb-14 text-white`}
+        className={`font-cinzel relative text-5xl lg:text-8xl text-center mt-10 lg:mt-[calc(205px-176px)] mb-14 text-white`}
       >
         {title}
       </h1>

@@ -1,11 +1,10 @@
-export * from "./burger-menu/burger-menu";
+export * from "./header/menu-mobile/menu-mobile";
 
-export * from "./activities-presentation";
-export * from "./short-presentation";
-export * from "./wine-presentation";
-export * from "./history-presentation";
-export * from "./exception-presentation";
+export * from "./main/activities";
+export * from "./main/prez";
+export * from "./main/wines";
+export * from "./main/history";
+export * from "./main/exception";
 
 export * from "../../components/wine-bottle";
-export * from "./menuMobile";
-export * from "./menuDesktop";
+export * from "./header/menu";

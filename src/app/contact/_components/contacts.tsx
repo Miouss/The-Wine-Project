@@ -1,10 +1,10 @@
 import { PhoneIcon, MailIcon, LinkedinIcon } from "@/assets/contact";
-import { cinzel } from "@/fonts";
+
 
 export function Contacts() {
   return (
     <section className="flex flex-col h-[calc(100vh-70px)] pb-6 px-12 pt-32">
-      <h1 className={`${cinzel.className} font-bold text-5xl text-center`}>
+      <h1 className={`font-cinzel font-bold text-5xl text-center`}>
         Contact
       </h1>
 

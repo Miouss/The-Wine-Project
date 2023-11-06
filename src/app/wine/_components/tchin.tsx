@@ -1,5 +1,5 @@
 import { TchinImage } from "@/assets/wine";
-import { cinzel } from "@/fonts";
+
 
 export function Tchin() {
   return (
@@ -8,7 +8,7 @@ export function Tchin() {
         <TchinImage />
       </div>
       <h5
-        className={`${cinzel.className} self-end relative z-1 text-3xl lg:text-6xl pl-16 pb-20 lg:pb-32 text-white bg-gradient-to-t lg:bg-none from-black via-transparent`}
+        className={`font-cinzel self-end relative z-1 text-3xl lg:text-6xl pl-16 pb-20 lg:pb-32 text-white bg-gradient-to-t lg:bg-none from-black via-transparent`}
       >
         À LA VOTRE
       </h5>
