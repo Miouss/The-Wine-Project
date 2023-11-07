@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className={`${cinzel.variable}`}>
-      <body className={`${montserrat.className} color-black`}>
+      <body className={`${montserrat.className} text-black`}>
         <Header />
         {children}
         <Footer />

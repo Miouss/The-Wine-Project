@@ -15,8 +15,8 @@ export const PrezImage = () => (
 export const ActivityImage = ({ nb = 0 }) => (
   <Image
     src={`${aboutFolder}/activity${nb}.png`}
-    fill={true}
     alt={"An activity"}
+    fill={true}
     style={{ objectFit: "cover" }}
   />
 );

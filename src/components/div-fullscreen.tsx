@@ -1,6 +1,5 @@
 import { WinePrezLogo } from "@/assets/wines";
 
-import { DivAbsoluteFullParent } from "@/styled-components";
 import React from "react";
 
 interface Props {
@@ -23,4 +22,12 @@ export const DivFullscreenWithLogo = ({ bgImage, title }: Props) => (
       </h1>
     </div>
   </div>
+);
+
+interface Props2 extends React.PropsWithChildren {
+  className?: React.HTMLAttributes<HTMLElement>;
+}
+
+const DivAbsoluteFullParent = ({ children, className }: Props2) => (
+  <div className={`absolute w-full z-0 h-full ${className}`}>{children}</div>
 );

@@ -1,4 +1,5 @@
 import { ProcessImage } from "@/assets/wine";
+import { DivGradient } from "@/components/div-gradient";
 
 
 export function Process() {
@@ -7,7 +8,7 @@ export function Process() {
       <div className="absolute z-0 h-full w-full">
         <ProcessImage />
       </div>
-      <div className="self-end relative px-16 pb-20 flex flex-col gap-4 text-white bg-gradient-to-t from-black via-transparent">
+      <DivGradient className="self-end relative px-16 pb-20 flex flex-col gap-4 text-white via-transparent">
         <h4 className={`font-cinzel text-2xl`}>PROCESSUS</h4>
         <p className="font-light">
           Ce vin rosé est élaboré par la méthode de saignée, où le moût est en
@@ -16,7 +17,7 @@ export function Process() {
           température contrôlée pour conserver la fraîcheur et les arômes
           délicats.
         </p>
-      </div>
+      </DivGradient>
     </section>
   );
 }

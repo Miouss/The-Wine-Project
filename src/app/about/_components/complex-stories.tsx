@@ -1,4 +1,5 @@
 import { DomainImage, ProcessImage } from "@/assets/about";
+import { DivGradient } from "@/components/div-gradient";
 
 
 const p1 = `Nos vignobles familiaux incarnent notre passion pour le vin et sont
@@ -82,14 +83,14 @@ const StoryIllustration = ({
     <div className="absolute lg:relative z-0 h-full lg:h-[800px] w-full lg:w-[512px]">
       {image}
     </div>
-    <div
-      className={`justify-end lg:self-end relative z-1 flex-1 flex flex-col gap-4 text-white lg:text-black px-16 pb-20 lg:p-0 bg-gradient-to-t from-black via-black via-20% via-transparant lg:bg-none `}
+    <DivGradient
+      className={`justify-end lg:self-end relative z-1 flex-1 flex flex-col gap-4 text-white lg:text-black px-16 pb-20 lg:p-0  via-black via-20% via-transparant lg:bg-none `}
     >
       <h4 className={`font-cinzel text-4xl lg:text-6xl`}>
         {title.toLocaleUpperCase()}
       </h4>
       {paragraphs}
-    </div>
+    </DivGradient>
   </div>
 );
 
