@@ -1,4 +1,5 @@
 import { SwitchLangButton } from "./menu-mobile";
+import "./menu-desktop.css";
 
 export const MenuDesktop = () => (
   <>
@@ -23,7 +24,7 @@ interface NavBtnProps extends React.PropsWithChildren {
 }
 
 const NavBtnDesktop = ({ href, children }: NavBtnProps) => (
-  <div>
+  <div className="nav-btn-desktop">
     <a href={`/${href}`}>{children}</a>
   </div>
 );
