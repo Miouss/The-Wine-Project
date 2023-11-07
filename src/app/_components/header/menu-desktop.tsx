@@ -1,5 +1,8 @@
+"use client";
+
 import { SwitchLangButton } from "./menu-mobile";
 import "./menu-desktop.css";
+import { useEffect, useState } from "react";
 
 export const MenuDesktop = () => (
   <>
@@ -23,8 +26,19 @@ interface NavBtnProps extends React.PropsWithChildren {
   href: string;
 }
 
-const NavBtnDesktop = ({ href, children }: NavBtnProps) => (
-  <div className="nav-btn-desktop">
-    <a href={`/${href}`}>{children}</a>
-  </div>
-);
+const NavBtnDesktop = ({ href, children }: NavBtnProps) => {
+  const [borderClass, setBorderClass] = useState("");
+
+  useEffect(() => {
+    setBorderClass(
+      window.location.pathname === `/${href}` ? "border-underline" : ""
+    );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  return (
+    <div className={`nav-btn-desktop ${borderClass}`}>
+      <a href={`/${href}`}>{children}</a>
+    </div>
+  );
+};

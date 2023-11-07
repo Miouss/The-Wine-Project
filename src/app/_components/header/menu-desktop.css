@@ -6,15 +6,9 @@
   transform: scale(1.1);
 }
 
-
-.nav-btn-desktop:after {
+.border-underline:after {
   display:block;
   content: '';
   border-bottom: solid 1px #1E1E1E;  
   transition: all 150ms ease-in-out;
-  transform: scaleX(0);  
-}
-
-.nav-btn-desktop:hover:after {
-  transform: scaleX(1);
 }
