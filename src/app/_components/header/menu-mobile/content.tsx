@@ -29,7 +29,7 @@ export function Content({ closeMenu }: MenuProps) {
 
   return (
     <AnimatedDiv
-      slideAnim={slideAnim}
+      anim={slideAnim}
       className={`absolute min-w-[100vw] p-4 top-0 left-0 min-h-screen flex flex-col bg-white sm:p-4`}
       onAnimationEnd={handleAnimationEnd}
     >
@@ -57,8 +57,8 @@ const slideAnim = (name: Slide, from: number, to: number) => `
 const slideInAnim = slideAnim(Slide.In, 100, 0);
 const slideOutAnim = slideAnim(Slide.Out, 0, 100);
 
-const AnimatedDiv = styled.div<{ slideAnim: string }>`
-  animation: ${({ slideAnim }) => slideAnim} 0.2s forwards;
+const AnimatedDiv = styled.div<{ anim: string }>`
+  animation: ${({ anim }) => anim} 0.2s forwards;
 
   ${slideInAnim}
 
