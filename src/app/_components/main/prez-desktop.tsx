@@ -1,5 +1,9 @@
 import { MainLogo } from "@/assets/commons";
-import { BottleHomeImage, HistoryDesktopImage, HistoryStyle } from "@/assets/home";
+import {
+  HistoryDesktopImage,
+  HistoryStyle,
+  PrezImageDesktop,
+} from "@/assets/home";
 
 export const PrezDesktop = () => (
   <section className="for-desktop relative flex flex-col">
@@ -24,7 +28,7 @@ export const PrezDesktop = () => (
         <div className="absolute h-[650px] w-[650px] rounded-full bg-wine-pink -translate-y-14" />
         <div className="absolute w-[313px] h-[800px] -translate-y-14">
           {" "}
-          <BottleHomeImage />
+          <PrezImageDesktop />
         </div>
       </div>
     </div>

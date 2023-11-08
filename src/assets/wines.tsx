@@ -4,7 +4,7 @@ const winesFolder = "/assets/wines";
 
 export const WinePrezImage = () => (
   <Image
-    src={`${winesFolder}/prez.png`}
+    src={`/assets/prez/wines.png`}
     alt={"A wine's cave with a lot of bottles"}
     fill={true}
     style={{ objectFit: "cover", filter: "brightness(50%)" }}

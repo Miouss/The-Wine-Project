@@ -4,7 +4,7 @@ const aboutFolder = "/assets/about";
 
 export const PrezImage = () => (
   <Image
-    src={`${aboutFolder}/prez.jpg`}
+    src={`/assets/prez/about.jpg`}
     fill={true}
     alt={"A book open on a table lighted by a candel, it's pretty dark"}
     style={{ objectFit: "cover", filter: "brightness(0.5)" }}
@@ -77,7 +77,7 @@ export const DomainImage = () => (
 
 export const FamilyImage = ({ nb = 0 }) => (
   <Image
-    src={`${aboutFolder}/family${nb}.jpg`}
+    src={`/assets/family/${nb}.jpg`}
     fill={true}
     alt={"Family member of De Vir"}
     style={{ objectFit: "cover" }}

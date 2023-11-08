@@ -1,5 +1,5 @@
 import { MainLogo } from "@/assets/commons";
-import { PrezImage } from "@/assets/home";
+import { PrezImageMobile } from "@/assets/home";
 
 export const PrezMobile = () => (
   <section className="for-mobile flex flex-col gap-16 items-center justify-center">
@@ -18,7 +18,7 @@ export const PrezMobile = () => (
     </div>
 
     <div className="relative w-screen h-[360px]">
-      <PrezImage />
+      <PrezImageMobile />
     </div>
   </section>
 );

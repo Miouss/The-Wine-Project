@@ -1,11 +1,10 @@
 import Image from "next/image";
-import { ReachUs } from "./../app/activities/_components/reach-us";
 
 const aboutFolder = "/assets/activities";
 
 export const PrezImage = () => (
   <Image
-    src={`${aboutFolder}/prez.jpg`}
+    src={`/assets/prez/activities.jpg`}
     fill={true}
     alt={"A woman serving wine in a glass"}
     style={{ objectFit: "cover", filter: "brightness(0.5)" }}

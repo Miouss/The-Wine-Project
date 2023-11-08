@@ -2,10 +2,19 @@ import Image from "next/image";
 
 const homeFolder = "/assets/home";
 
-export const PrezImage = () => (
+export const PrezImageDesktop = () => (
   <Image
-    src={`${homeFolder}/prez.png`}
-    alt={"3 bottles of wines"}
+    src={`/assets/prez/home-bottle.png`}
+    alt={`Bottle of wine 'les clés'`}
+    fill={true}
+  />
+);
+
+
+export const PrezImageMobile = () => (
+  <Image
+    src={`/assets/prez/home-bottles.png`}
+    alt={`Bottle of wine 'les clés'`}
     fill={true}
   />
 );
@@ -21,7 +30,7 @@ export const HistoryImage = () => (
 
 export const HistoryDesktopImage = () => (
   <Image
-    src={`${homeFolder}/history-desktop.png`}
+    src={`/assets/prez/home-desktop.png`}
     alt={"A man far way on a desert road looking at the horizon"}
     fill={true}
     style={{ objectFit: "cover" }}
@@ -60,14 +69,6 @@ export const BottleImage = ({
   <Image
     src={`${homeFolder}/bottle${nb}.png`}
     alt={`Bottle of wine '${title}'`}
-    fill={true}
-  />
-);
-
-export const BottleHomeImage = () => (
-  <Image
-    src={`${homeFolder}/bottle.png`}
-    alt={`Bottle of wine 'les clés'`}
     fill={true}
   />
 );
