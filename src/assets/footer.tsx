@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { socials } from "../../public/assets/socials"; 
+import "./footer.css";
 
 const footerFolder = "/assets/footer";
 
@@ -33,20 +35,24 @@ export const Socials = () => {
   const nbSocials = 4;
 
   return (
-    <ol className="flex flex-wrap justify-around gap-4">
+    <ol
+      className="flex flex-wrap justify-around gap-4 border-black border-2"
+      style={{ border: "solid 1px black", overflow: "hidden" }}
+    >
       {Array.from({ length: nbSocials }, (_, i) => (
-        <div
+        <a
+          href="https://google.com"
+          target="_blank"
           key={i}
-          className="flex-1 flex justify-center w-10 h-10 "
-          style={{ borderBottom: "1px solid white", paddingBottom: "4px" }}
+          className="switch-anim relative flex flex-col w-10 h-10 pb-1 border-b-[1px] border-white"
         >
-          <Image
-            src={`${footerFolder}/socials${i}.svg`}
-            width={24}
-            height={24}
-            alt={`Logo distinction ${i}`}
-          />
-        </div>
+          <div className="w-10 h-10 flex justify-center items-center">
+            {socials[i][0]}
+          </div>
+          <div className="absolute w-10 h-10 flex justify-center items-center">
+            {socials[i][1]}
+          </div>
+        </a>
       ))}
     </ol>
   );

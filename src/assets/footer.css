@@ -1,0 +1,23 @@
+.switch-anim > :first-child {
+  background-color: red;
+  transition: transform 0.2s ease-in-out;
+}
+
+.switch-anim:hover > :first-child {
+  transform: translateY(-100%);
+}
+
+.switch-anim:hover > :last-child {
+  transform: translateY(0%);
+}
+
+.switch-anim > :last-child {
+  background-color: aqua;
+  transition: transform 0.2s ease-in-out;
+  transform: translateY(100%);
+}
+
+.black-svg > * > * {
+  fill: black;
+  stroke: black
+}
