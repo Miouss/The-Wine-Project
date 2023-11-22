@@ -39,3 +39,15 @@ export const ReachUsImage = () => (
     }
   />
 );
+
+
+export const EventImage = () => (
+  <Image
+    src={`${aboutFolder}/event.png`}
+    fill={true}
+    style={{ objectFit: "cover", filter: "brightness(0.5)" }}
+    alt={
+      "Couple dans un mariage"
+    }
+  />
+);
