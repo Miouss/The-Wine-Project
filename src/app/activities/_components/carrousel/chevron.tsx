@@ -18,11 +18,13 @@ const Chevron = ({ sign, position, handleClick }: ChevronProps) => {
   return (
     <div
       ref={chevronRef}
-      className={`absolute h-screen w-10 flex justify-center items-center z-10 cursor-pointer hover:bg-white select-none`}
+      className={`absolute h-[100%] w-10 flex justify-center items-center z-10 cursor-pointer text-white group select-none`}
       style={{ [position]: 0 }}
       onClick={handleClickHere}
     >
-      {sign}
+      <span className="group-hover:scale-150 transition-transform duration-100 ">
+        {sign}
+      </span>
     </div>
   );
 };
