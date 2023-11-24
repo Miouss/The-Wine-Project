@@ -1,4 +1,4 @@
-import { Activities, Carrousel, Prez, ReachUs } from "./_components";
+import { Activities, Carrousel, LearnMore, Prez, ReachUs } from "./_components";
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <Prez />
       <Activities />
       <Carrousel />
+      <LearnMore />
       <ReachUs />
     </main>
   );
