@@ -22,7 +22,7 @@ const Chevron = ({ sign, position, handleClick }: ChevronProps) => {
       style={{ [position]: 0 }}
       onClick={handleClickHere}
     >
-      <span className="group-hover:scale-150 transition-transform duration-100 ">
+      <span className="group-hover:scale-150 transition-transform duration-50 lg:text-2xl lg:px-2">
         {sign}
       </span>
     </div>
