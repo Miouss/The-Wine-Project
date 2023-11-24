@@ -30,14 +30,18 @@ const NavBtnDesktop = ({ href, children }: NavBtnProps) => {
   const [borderClass, setBorderClass] = useState("");
 
   useEffect(() => {
+    const isCurrentPage = window.location.pathname === `/${href}`;
+
     setBorderClass(
-      window.location.pathname === `/${href}` ? "border-underline" : ""
+      isCurrentPage ? "font-bold scale-125 pointer-events-none" : ""
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div className={`nav-btn-desktop ${borderClass}`}>
+    <div
+      className={`transition-all duration-150 ease-in-out hover:scale-110 ${borderClass}`}
+    >
       <a href={`/${href}`}>{children}</a>
     </div>
   );
