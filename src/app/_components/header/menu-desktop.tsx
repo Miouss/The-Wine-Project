@@ -1,7 +1,6 @@
 "use client";
 
 import { SwitchLangButton } from "./menu-mobile";
-import "./menu-desktop.css";
 import { useEffect, useState } from "react";
 
 export const MenuDesktop = () => (
