@@ -2,14 +2,6 @@ import Image from "next/image";
 
 const wineFolder = "/assets/wine";
 
-export const BottleImage = () => (
-  <Image
-    src={`${wineFolder}/bottle.png`}
-    alt={"bottle of wine"}
-    fill={true}
-  />
-);
-
 export const ProcessImage = () => (
   <Image
     src={`${wineFolder}/process.jpg`}

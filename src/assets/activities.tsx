@@ -2,15 +2,6 @@ import Image from "next/image";
 
 const aboutFolder = "/assets/activities";
 
-export const PrezImage = () => (
-  <Image
-    src={`/assets/prez/activities.jpg`}
-    fill={true}
-    alt={"A woman serving wine in a glass"}
-    style={{ objectFit: "cover", filter: "brightness(0.5)" }}
-  />
-);
-
 export const ActivityImage = ({ nb = 0 }) => (
   <Image
     src={`${aboutFolder}/activity${nb}.png`}

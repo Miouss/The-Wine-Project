@@ -1,9 +1,9 @@
-import { PrezImage } from "@/assets/about";
-import { DivFullscreenWithLogo } from "@/components/div-fullscreen";
+import { PageIllustration } from "@/layouts/PageIllustration";
+import { Pages } from "@/types";
 
 export const Prez = () => (
   <section className="flex flex-col gap-16 mb-16">
-    <DivFullscreenWithLogo bgImage={<PrezImage />} title={"L'HISTOIRE"} />
+    <PageIllustration page={Pages.ABOUT} />
 
     <p className="text-left font-light mx-16 max-w-[800px] self-center">
       Il y a plusieurs décennies, une petite parcelle de terre était transmise

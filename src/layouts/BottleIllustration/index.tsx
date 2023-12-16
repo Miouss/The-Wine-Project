@@ -1,24 +1,20 @@
 import { DivGradient } from "@/components/div-gradient";
+import { BottlesType } from "@/types";
+import { Illustrations } from "./illustrations";
 
 interface Props {
-  illustration: JSX.Element;
-  title: string;
-  wineType: "red" | "white" | "pink";
+  bottleType: BottlesType;
 }
 
-export function WineIllustration({ illustration, title, wineType }: Props) {
-  const wineBg = {
-    red: "lg:bg-wine-red",
-    white: "lg:bg-wine-white",
-    pink: "lg:bg-wine-pink",
-  };
+export function BottleIllustration({ bottleType }: Props) {
+  const { img, title } = Illustrations()[bottleType];
 
   return (
     <div
-      className={`relative flex flex-col gap-16 h-[calc(100vh-70px)] lg:flex-row w-full max-w-[1184px] ${wineBg[wineType]}`}
+      className={`relative flex flex-col gap-16 h-[calc(100vh-70px)] lg:flex-row w-full max-w-[1184px]`}
     >
       <div className={`absolute lg:relative w-full lg:w-[600px] z-0 h-full`}>
-        {illustration}
+        {img}
       </div>
       <DivGradient
         className={`relative flex-1 flex items-end lg:bg-none  lg:from-transparent  lg:via-transparent via-10%`}

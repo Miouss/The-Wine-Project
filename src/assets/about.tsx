@@ -2,15 +2,6 @@ import Image from "next/image";
 
 const aboutFolder = "/assets/about";
 
-export const PrezImage = () => (
-  <Image
-    src={`/assets/prez/about.jpg`}
-    fill={true}
-    alt={"A book open on a table lighted by a candel, it's pretty dark"}
-    style={{ objectFit: "cover", filter: "brightness(0.5)" }}
-  />
-);
-
 export const ManImage = () => (
   <>
     <Image

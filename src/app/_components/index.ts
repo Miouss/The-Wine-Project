@@ -6,5 +6,4 @@ export * from "./main/wines";
 export * from "./main/history";
 export * from "./main/exception";
 
-export * from "../../components/wine-bottle";
 export * from "./header/menu";

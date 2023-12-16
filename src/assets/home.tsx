@@ -58,17 +58,3 @@ export const HistoryStyle = ({ nb = 1 }) => (
     height={24}
   />
 );
-
-export const BottleImage = ({
-  nb = 0,
-  title,
-}: {
-  nb: number;
-  title: string;
-}) => (
-  <Image
-    src={`${homeFolder}/bottle${nb}.png`}
-    alt={`Bottle of wine '${title}'`}
-    fill={true}
-  />
-);
