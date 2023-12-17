@@ -1,11 +1,14 @@
-import { MainPrez } from "./_components/main-presentation";
 import { BottlePrez, BottlesType } from "@/layouts/BottlePrez";
 import { BottleIllustration } from "@/layouts/BottleIllustration";
+import { PageIllustration } from "@/layouts/PageIllustration";
+import { Pages } from "@/types";
 
 export default function Wines() {
   return (
     <main className="flex flex-col gap-48 mb-40">
-      <MainPrez />
+      <section className="relative flex flex-col">
+        <PageIllustration page={Pages.WINES} />
+      </section>
       <BottleSection>
         <BottleIllustration bottleType={BottlesType.PINK} />
         <BottlePrez bottleType={BottlesType.PINK} />
