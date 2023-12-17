@@ -2,7 +2,7 @@ import { BottlesType } from "@/types";
 import { Bottle } from ".";
 import { BottleImage } from "./bottleImage";
 
-export const WhiteBottle = (): Bottle => ({
+export const WhiteBottle: Bottle = {
   name: "La clé de l'aube",
   img: <BottleImage name={BottlesType.WHITE} title="La clé de l'aube" />,
   description:
@@ -11,4 +11,4 @@ export const WhiteBottle = (): Bottle => ({
   price: 24,
   percentAlcohol: 10,
   capacity: 0.75,
-});
+};

@@ -15,8 +15,8 @@ export interface Bottle {
 
 export function Bottles() {
   return {
-    [BottlesType.PINK]: () => PinkBottle(),
-    [BottlesType.RED]: () => RedBottle(),
-    [BottlesType.WHITE]: () => WhiteBottle(),
+    [BottlesType.PINK]: PinkBottle,
+    [BottlesType.RED]: RedBottle,
+    [BottlesType.WHITE]: WhiteBottle,
   };
 }
