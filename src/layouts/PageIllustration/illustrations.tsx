@@ -1,3 +1,4 @@
+import { IMAGES_LAYOUTS_FOLDER } from "@/config";
 import { Pages } from "@/types";
 import Image from "next/image";
 
@@ -42,7 +43,7 @@ export function Illustrations(): IIlustrations {
 }
 const PageIllustrationImage = ({ page, alt }: { page: Pages; alt: string }) => (
   <Image
-    src={`/images/PageIllustration/${page}.jpg`}
+    src={`${IMAGES_LAYOUTS_FOLDER}/PageIllustration/${page}.jpg`}
     alt={alt}
     fill={true}
     style={{ objectFit: "cover", filter: "brightness(50%)" }}

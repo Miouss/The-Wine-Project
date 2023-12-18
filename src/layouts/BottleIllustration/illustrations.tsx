@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BottlesType } from "@/types";
+import { IMAGES_LAYOUTS_FOLDER } from "@/config";
 
 export function Illustrations() {
   return {
@@ -20,7 +21,7 @@ export function Illustrations() {
 
 const IllustrationImage = ({ bottleType }: { bottleType: BottlesType }) => (
   <Image
-    src={`/images/BottleIllustration/${bottleType}.png`}
+    src={`${IMAGES_LAYOUTS_FOLDER}/BottleIllustration/${bottleType}.png`}
     alt={"A woman drinking a glass of wine"}
     fill={true}
     style={{ objectFit: "cover" }}

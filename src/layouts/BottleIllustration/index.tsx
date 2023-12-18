@@ -1,4 +1,4 @@
-import { DivGradient } from "@/components/div-gradient";
+import { DivGradient } from "@/components/DivGradient";
 import { BottlesType } from "@/types";
 import { Illustrations } from "./illustrations";
 

@@ -1,6 +1,7 @@
+import { IMAGES_LAYOUTS_FOLDER } from "@/config";
 import Image from "next/image";
 
-const folder = "/images/SimpleStories";
+const folder = IMAGES_LAYOUTS_FOLDER + "/SimpleStories";
 
 export const ManImage = () => (
   <>

@@ -1,4 +1,4 @@
-import { DivGradient } from "@/components/div-gradient";
+import { DivGradient } from "@/components/DivGradient";
 import { ReachUsImage, WhiteLineImage } from "./images";
 
 export const ReachUs = () => (

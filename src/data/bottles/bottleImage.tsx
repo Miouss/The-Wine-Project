@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { BottlesType } from "@/types";
+import { IMAGES_DATA_FOLDER } from "@/config";
 
 export function BottleImage({
   name,
@@ -10,7 +11,7 @@ export function BottleImage({
 }) {
   return (
     <Image
-      src={`/images/data/bottles/${name}.png`}
+      src={`${IMAGES_DATA_FOLDER}/bottles/${name}.png`}
       alt={`Bottle of wine '${title}'`}
       fill
     />

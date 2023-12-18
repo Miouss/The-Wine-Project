@@ -1,4 +1,4 @@
-import { DistinctionImage } from "./images";
+import { DistinctionImage } from "@/components/DistinctionsImages";
 
 export const Distinctions = () => (
   <section className="flex flex-col px-16 lg:px-0 py-48 lg:py-64 gap-8 self-center max-w-[800px]">

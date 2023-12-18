@@ -1,4 +1,4 @@
-import { DivGradient } from "@/components/div-gradient";
+import { DivGradient } from "@/components/DivGradient";
 import { ProcessImage } from "./images";
 
 export function Process() {

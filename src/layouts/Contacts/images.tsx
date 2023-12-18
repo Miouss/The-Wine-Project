@@ -1,6 +1,7 @@
+import { IMAGES_LAYOUTS_FOLDER } from "@/config";
 import Image from "next/image";
 
-const folder = "/images/Contacts";
+const folder = IMAGES_LAYOUTS_FOLDER + "/Contacts";
 
 export const PhoneIcon = () => (
   <Image

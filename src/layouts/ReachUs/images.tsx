@@ -1,8 +1,9 @@
+import { IMAGES_LAYOUTS_FOLDER, IMAGES_STYLES_FOLDER } from "@/config";
 import Image from "next/image";
 
 export const ReachUsImage = () => (
   <Image
-    src={`/images/ReachUs/reach-us.jpg`}
+    src={`${IMAGES_LAYOUTS_FOLDER}/ReachUs/reach-us.jpg`}
     fill={true}
     style={{ objectFit: "cover", filter: "brightness(0.5)" }}
     alt={
@@ -13,7 +14,7 @@ export const ReachUsImage = () => (
 
 export const WhiteLineImage = () => (
   <Image
-    src={`/images/styles/white-line-stylish.svg`}
+    src={`${IMAGES_STYLES_FOLDER}/white-line-stylish.svg`}
     width={131}
     height={24}
     alt={"black line styled"}

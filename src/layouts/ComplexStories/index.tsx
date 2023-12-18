@@ -1,5 +1,5 @@
 import { DomainImage, ProcessImage } from "@/assets/about";
-import { DivGradient } from "@/components/div-gradient";
+import { DivGradient } from "@/components/DivGradient";
 
 const p1 = `Nos vignobles familiaux incarnent notre passion pour le vin et sont
           l'essence même de notre entreprise, où l'amour de la terre

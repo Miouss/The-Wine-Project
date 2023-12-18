@@ -21,7 +21,7 @@ const config: Config = {
         "wine-red": wineRed,
       },
       backgroundImage: {
-        footer: "url('/assets/footer/bg.png')",
+        footer: "url('/images/components/Footer/bg.png')",
       },
       fontFamily: {
         cinzel: "var(--cinzel-font)",
