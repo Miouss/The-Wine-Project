@@ -1,5 +1,5 @@
 import { BottlesType } from "@/types";
-import { Bottles } from "@/data/bottles";
+import { BOTTLES } from "@/data/bottles";
 
 interface Props {
   bottleType: BottlesType;
@@ -7,8 +7,8 @@ interface Props {
 
 export function BigBottlePrez({ bottleType }: Props) {
   const { img, price, capacity, percentAlcohol, name, description } =
-    Bottles()[bottleType];
-  
+    BOTTLES[bottleType];
+
   return (
     <>
       <div className="relative w-[186px] lg:w-[313.8px] h-[559px] lg:h-[800px]">

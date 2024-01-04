@@ -1,5 +1,5 @@
 import { BottlesType } from "@/types";
-import { Bottles } from "@/data/bottles";
+import { BOTTLES } from "@/data/bottles";
 
 interface Props {
   bottleType: BottlesType;
@@ -8,7 +8,7 @@ interface Props {
 export { BottlesType };
 
 export const BottlePrez = ({ bottleType, isImgAtRight = false }: Props) => {
-  const { img, name, description } = Bottles()[bottleType];
+  const { img, name, description } = BOTTLES[bottleType];
   return (
     <div className="px-16 lg:px-0 w-full max-w-[992px]">
       <figure
