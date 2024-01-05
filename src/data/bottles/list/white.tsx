@@ -1,6 +1,6 @@
 import { BottlesType } from "@/types";
-import { BottleImage } from "./bottleImage";
-import { Bottle } from "./enums";
+import { BottleImage } from "../bottleImage";
+import { Bottle } from "../enums";
 
 export const WhiteBottle: Bottle = {
   name: "La clé de l'aube",

@@ -1,6 +1,6 @@
-import { sangriaAuRose } from "./sangria-au-rose";
-import { gazpachoAuRose } from "./gazpacho-au-rose";
-import { glaceAuRose } from "./glace-au-rose";
+import { sangriaAuRose } from "./list/sangria-au-rose";
+import { gazpachoAuRose } from "./list/gazpacho-au-rose";
+import { glaceAuRose } from "./list/glace-au-rose";
 import { PlateName, IPlate } from "./enums";
 
 

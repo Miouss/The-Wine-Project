@@ -1,6 +1,6 @@
 
-import { IPlate, PlateName } from "./enums";
-import { PlateImage } from "./plateImage";
+import { IPlate, PlateName } from "../enums";
+import { PlateImage } from "../plateImage";
 
 export const gazpachoAuRose: IPlate = {
   name: "Gazpacho au Rosé",

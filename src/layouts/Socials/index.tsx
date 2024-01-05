@@ -1,4 +1,4 @@
-import { socials } from "../FindUs/socials";
+import { socials } from "@/data/socials-icons";
 
 export const Socials = () => {
   const nbSocials = 4;

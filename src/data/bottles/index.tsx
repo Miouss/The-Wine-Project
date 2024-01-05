@@ -1,7 +1,7 @@
 import { BottlesType } from "@/types";
-import { PinkBottle } from "./pink";
-import { RedBottle } from "./red";
-import { WhiteBottle } from "./white";
+import { PinkBottle } from "./list/pink";
+import { RedBottle } from "./list/red";
+import { WhiteBottle } from "./list/white";
 
 export const BOTTLES = {
   [BottlesType.PINK]: PinkBottle,
