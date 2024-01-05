@@ -2,7 +2,7 @@ import { ReachUs } from "@/layouts/ReachUs";
 import { PageIllustration } from "@/layouts/PageIllustration";
 import { Pages } from "@/types";
 import { LearnMore } from "@/layouts/LearnMore";
-import { Activities } from "@/layouts/Activities";
+import { ActivitiesCalendar } from "@/layouts/ActivitiesCalendar";
 import { Carrousel } from "@/layouts/Carrousel";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <section className="relative flex flex-col gap-16 mb-16">
         <PageIllustration page={Pages.ACTIVITIES} />
       </section>
-      <Activities />
+      <ActivitiesCalendar />
       <Carrousel />
       <LearnMore />
       <ReachUs />
