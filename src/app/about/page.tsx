@@ -4,7 +4,6 @@ import { Family } from "@/layouts/Family";
 import { SimpleStories } from "@/layouts/SimpleStories";
 import { ComplexStories } from "@/layouts/ComplexStories";
 
-
 export default function Home() {
   return (
     <main className="flex flex-col lg:gap-64">
@@ -24,7 +23,9 @@ export default function Home() {
       </section>
       <SimpleStories />
       <ComplexStories />
-      <Family />
+      <section className="flex flex-col py-48 px-6 lg:px-0 gap-20 max-w-[800px] self-center">
+        <Family />
+      </section>
     </main>
   );
 }

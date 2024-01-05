@@ -18,7 +18,9 @@ export default function Wine() {
       <Process />
       <Distinctions />
       <Plates />
-      <Tchin />
+      <section className="relative h-screen w-screen lg:max-h-[600px] flex lg:justify-center">
+        <Tchin />
+      </section>
       <section className="flex flex-col gap-40 pt-16 pb-40 items-center">
         <BottlePrez bottleType={BottlesType.RED} />
         <BottlePrez bottleType={BottlesType.WHITE} />

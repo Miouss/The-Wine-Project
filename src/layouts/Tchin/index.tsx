@@ -2,7 +2,7 @@ import { TchinImage } from "./images";
 
 export function Tchin() {
   return (
-    <section className="relative h-screen w-screen lg:max-h-[600px] flex lg:justify-center">
+    <>
       <div className="absolute z-0 h-full w-full">
         <TchinImage />
       </div>
@@ -11,6 +11,6 @@ export function Tchin() {
       >
         À LA VOTRE
       </h5>
-    </section>
+    </>
   );
 }

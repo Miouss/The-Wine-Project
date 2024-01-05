@@ -1,25 +1,10 @@
 import { DivGradient } from "@/components/DivGradient";
 import { DomainImage, ProcessImage } from "./images";
-
-const p1 = `Nos vignobles familiaux incarnent notre passion pour le vin et sont
-          l'essence même de notre entreprise, où l'amour de la terre
-          et la culture de la vigne donnent naissance à des vins qui réchauffent
-          les cœurs, perpétuant l'héritage de notre région viticole avec
-          chaque bouteille que nous créons`;
-
-const p2 = `Chaque bouteille devient une invitation à explorer l&apos;âme de notre
-        domaine, à découvrir les trésors cachés dans chaque gorgée, et à percer
-        le mystère de notre passion inébranlable pour le vin. Rejoignez-nous
-        dans cette aventure vinique, où chaque bouteille est une clé pour
-        déverrouiller les plaisirs les plus exquis que le vin peut offrir.`;
-
-const p3 = `La fermentation, orchestrée par notre vigneron passionné, transforme le
-        sucre en alcool, créant une alchimie sensorielle. L&apos;élevage en fûts
-        ou en cuves est une période de maturation mystique, donnant naissance à
-        des saveurs et des arômes qui semblent surgir d&apos;un univers
-        enchanté.`;
+import { STORIES } from "@/data/stories";
+import { P } from "@/data/stories/structure";
 
 export function ComplexStories() {
+  const { vineyard, domain, process } = STORIES;
   return (
     <section className="flex flex-col lg:gap-64">
       <StoryIllustration
@@ -27,33 +12,21 @@ export function ComplexStories() {
         image={<DomainImage />}
         isReverse={true}
       >
-        <p className="font-light lg:text-xl">
-          Niché au cœur du Sud de la France, notre domaine est un sanctuaire de
-          la tradition viticole et de la beauté de la région. Nos vignes
-          s&apos;épanouissent sous la douce lumière méditerranéenne, dans un sol
-          argilo-calcaire, et bénéficient d&apos;un climat chaud et ensoleillé
-          ainsi que de la brise marine, créant un terroir unique pour nos
-          raisins et des vins d&apos;une élégance exceptionnelle.
-        </p>
-        <p className="for-desktop font-light text-xl">{p1}</p>
+        <P>{domain}</P>
+        <P className="for-desktop">{process[0]}</P>
       </StoryIllustration>
 
-      <StoryParagraph>{p1}</StoryParagraph>
+      <StoryParagraph>{vineyard}</StoryParagraph>
 
       <StoryIllustration title="LE PROCESSUS" image={<ProcessImage />}>
-        <p className="font-light lg:text-xl">
-          Tout commence par une récolte méticuleuse, un rituel intime où chaque
-          grappe de raisin est choisie à son apogée de maturité. Les raisins,
-          gardiens de secrets, sont acheminés vers la cave, où ils révèlent
-          leurs mystères au cours du processus de vinification.
-        </p>
-        <p className="for-desktop font-light  text-xl">{p2}</p>
-        <p className="for-desktop font-light  text-xl">{p3}</p>
+        <P className="for-desktop">{process[0]}</P>
+        <P className="for-desktop">{process[1]}</P>
+        <P className="for-desktop">{process[2]}</P>
       </StoryIllustration>
 
-      <StoryParagraph>{p2}</StoryParagraph>
+      <StoryParagraph>{process[1]}</StoryParagraph>
 
-      <StoryParagraph text={"left"}>{p3}</StoryParagraph>
+      <StoryParagraph text={"left"}>{process[3]}</StoryParagraph>
     </section>
   );
 }
